@@ -12,6 +12,8 @@ section {
 .mariocontainer {
     width: 50%;
     float: left;
+    background-color: lightblue;
+    border-right:  1px solid white;
 }
 
 .mariocontainer [class*="col-"]{
@@ -21,10 +23,27 @@ section {
 .gumbacontainer {
     float: left;
     width: 50%;
+    background-color: Bisque;
+    border-left:  1px solid white;
 }
 
 .gumbacontainer [class*="col-"]{
     height: 50px;;
+}
+
+#personaggi:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#personaggi {
+    width: 300px;
+    border: 5px solid black;
+}
+
+#personaggi [class*="col-"]{
+    height: 8px;;
 }
 
 .section:after {
@@ -38,6 +57,7 @@ div:after {
     display: table;
     clear: both;
 }
+
 .colorered {
     background-color: rgb(255, 0, 0);
     border: 1px solid black;
