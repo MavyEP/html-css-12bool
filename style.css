@@ -1,49 +1,61 @@
 
+body {
+    background-image: url(https://i.imgur.com/ZwocvDO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
 
 .margin {
     height: 100px;
 }
 
-section {
-    width: 50%;
-    float: left;
-}
-
 .mariocontainer {
-    width: 50%;
-    float: left;
     background-color: lightblue;
-    border-right:  1px solid white;
 }
 
-.mariocontainer [class*="col-"]{
-    height: 50px;;
-}
-
-.gumbacontainer {
-    float: left;
-    width: 50%;
-    background-color: Bisque;
-    border-left:  1px solid white;
-}
-
-.gumbacontainer [class*="col-"]{
-    height: 50px;;
-}
-
-#personaggi:after {
+.mariocontainer::after {
     content: "";
     display: table;
     clear: both;
 }
 
-#personaggi {
-    width: 300px;
-    border: 5px solid black;
+.mariocontainer [class*="col-"]{
+    height: 15px;
 }
 
-#personaggi [class*="col-"]{
-    height: 8px;;
+.gumbacontainer {
+    background-color: Bisque;
+}
+
+.gumbacontainer [class*="col-"]{
+    height: 15px;
+}
+
+div::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nintendocontainer section {
+    float: left;
+    width: 25%;
+}
+
+.nintendocontainer [class*="col-"]{
+    height: 14px;;
+}
+
+.nintendocontainer {
+    width: 90%;
+    margin: auto;
+    border-bottom: 10px solid black;
+    border-top: 10px solid black;
 }
 
 .section:after {
@@ -52,11 +64,6 @@ section {
     clear: both;
 }
 
-div:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 .colorered {
     background-color: rgb(255, 0, 0);
@@ -97,4 +104,51 @@ div:after {
     background-color: black;
     border: 1px solid black;
     height: 100px;
+}
+
+.colorgrey {
+    background-color: grey;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.colorwhite {
+    background-color: white;
+    border: 1px solid black;
+    height: 100px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+
+.mariocontainer section {
+    width: 50%;
+    float: left;
+}
+
+.gumbacontainer section {
+    width: 50%;
+    float: left;
+}
+
+.mainelemento {
+   margin-top: 100px;
+}
+
+.mainelemento:last-child {
+   margin-bottom: 100px;
+}
+
+.containerimmagini {
+    border: 10px solid white;
+    width: 35%;
+    margin-left: 400px;
+    padding: 20px;
 }

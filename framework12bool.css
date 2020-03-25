@@ -19,6 +19,7 @@
     float: left;
 }
 
+
 .col-1  {
     width: calc(( 100% / 12) * 1);
 }
@@ -66,8 +67,6 @@
 .col-12  {
     width: calc(( 100% / 12) * 12);
 }
-
-
 
 
 .col-offset-1 {
